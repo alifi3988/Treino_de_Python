@@ -1,0 +1,44 @@
+import os
+
+print(10*"=-=-")
+print("...BEM VINDO A CALCULADORA....")
+opc = 0
+maior = 0;
+
+print("Primeiro informe os dois valores para poder proseguir: ")
+numA = int(input("Valor A: "))
+numB = int(input("Valor B: "))
+
+print("Okay, podemos prosseguir...")
+os.system('cls')
+while not opc == 5:
+    print(" **** M E N U ****")
+    print('''Escolha uma das opções abaixo
+    [1] - Somar
+    [2] - Multiplicar
+    [3] - Maior
+    [4] - Novos Números
+    [5] - Sair''')
+    opc = int(input("Informe a sua opção: "))
+    if opc == 1:
+        res = numA + numB
+        print("O resultado da soma de {} + {} resulta em: {}".format(numA, numB, res))
+        os.system("pause")
+    elif opc == 2:
+        res = numA * numB
+        print("O resultado da mult de {} + {} resulta em: {}".format(numA, numB, res))
+        os.system("pause")
+    elif opc == 3:
+        if numA > numB:
+            print("O maior número é {}".format(numA))
+            os.system("pause")
+        else:
+            print("O maior número é {}".format(numB))
+            os.system("pause")
+    elif opc == 4:
+        print("Adicione novos números....")
+        print("Informe os dois valores para poder proseguir: ")
+        numA = int(input("Valor A: "))
+        numB = int(input("Valor B: "))
+        os.system("pause")
+print("Fim do Programa..Obrigado!")
