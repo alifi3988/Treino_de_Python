@@ -1,0 +1,10 @@
+numero = ('zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez', 'onze', 'doze', 'treze', 'quatorze', 'quinze', 'desesseis', 'dezessete', 'dezoito', 'dezenove', 'vinte')
+
+while True:
+  num = int (input('Informe um número de 0 - 20: '))
+  if(numero < 0) or (numero > 20):
+    print('Valor informado inválido, tente novamente...')
+  else:
+    break
+print(f'Você escolheu o númeor {num} ({numeor[num]})')
+print('Fim do programa!')
